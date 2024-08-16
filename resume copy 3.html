@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ronak Patel - Web Resume</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/bootstrap.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+
+</head>
+<body>
+    <!-- Header Section -->
+    <header id="header" class="container mt-4 mb-5 bg-light p-3 rounded">
+        
+        <div class="row align-items-center">
+            <div class="col-md-4 mb-3 mb-md-0">
+                <img src="profile.jpg" alt="Professional profile picture of Ronak Patel" class="img-fluid rounded-circle">
+            </div>
+
+            <div class="col-md-8">
+                <h1 class="display-4">Ronak Patel</h1>
+                <p class="lead">Welcome to my professional web resume.</p>
+            </div>
+
+        </div>
+    </header>
+
+   <!-- Pills navs -->
+<ul class="nav nav-pills nav-justified mb-3" id="ex1" role="tablist">
+    <li class="nav-item" role="presentation">
+      <a class="nav-link active" id="tab-login" data-mdb-pill-init href="#pills-login" role="tab"
+        aria-controls="pills-login" aria-selected="true">Login</a>
+    </li>
+    <li class="nav-item" role="presentation">
+      <a class="nav-link" id="tab-register" data-mdb-pill-init href="#pills-register" role="tab"
+        aria-controls="pills-register" aria-selected="false">Register</a>
+    </li>
+  </ul>
+  <!-- Pills navs -->
+  
+  <!-- Pills content -->
+  <div class="tab-content">
+    <div class="tab-pane fade show active" id="pills-login" role="tabpanel" aria-labelledby="tab-login">
+      <form>
+        <div class="text-center mb-3">
+          <p>Sign in with:</p>
+          <button  type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-link btn-floating mx-1">
+            <i class="fab fa-facebook-f"></i>
+          </button>
+  
+          <button  type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-link btn-floating mx-1">
+            <i class="fab fa-google"></i>
+          </button>
+  
+          <button  type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-link btn-floating mx-1">
+            <i class="fab fa-twitter"></i>
+          </button>
+  
+          <button  type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-link btn-floating mx-1">
+            <i class="fab fa-github"></i>
+          </button>
+        </div>
+  
+        <p class="text-center">or:</p>
+  
+        <!-- Email input -->
+        <div data-mdb-input-init class="form-outline mb-4">
+          <input type="email" id="loginName" class="form-control" />
+          <label class="form-label" for="loginName">Email or username</label>
+        </div>
+  
+        <!-- Password input -->
+        <div data-mdb-input-init class="form-outline mb-4">
+          <input type="password" id="loginPassword" class="form-control" />
+          <label class="form-label" for="loginPassword">Password</label>
+        </div>
+  
+        <!-- 2 column grid layout -->
+        <div class="row mb-4">
+          <div class="col-md-6 d-flex justify-content-center">
+            <!-- Checkbox -->
+            <div class="form-check mb-3 mb-md-0">
+              <input class="form-check-input" type="checkbox" value="" id="loginCheck" checked />
+              <label class="form-check-label" for="loginCheck"> Remember me </label>
+            </div>
+          </div>
+  
+          <div class="col-md-6 d-flex justify-content-center">
+            <!-- Simple link -->
+            <a href="#!">Forgot password?</a>
+          </div>
+        </div>
+  
+        <!-- Submit button -->
+        <button type="submit" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-block mb-4">Sign in</button>
+  
+        <!-- Register buttons -->
+        <div class="text-center">
+          <p>Not a member? <a href="#!">Register</a></p>
+        </div>
+      </form>
+    </div>
+    <div class="tab-pane fade" id="pills-register" role="tabpanel" aria-labelledby="tab-register">
+      <form>
+        <div class="text-center mb-3">
+          <p>Sign up with:</p>
+          <button  type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-link btn-floating mx-1">
+            <i class="fab fa-facebook-f"></i>
+          </button>
+  
+          <button  type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-link btn-floating mx-1">
+            <i class="fab fa-google"></i>
+          </button>
+  
+          <button  type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-link btn-floating mx-1">
+            <i class="fab fa-twitter"></i>
+          </button>
+  
+          <button  type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-link btn-floating mx-1">
+            <i class="fab fa-github"></i>
+          </button>
+        </div>
+  
+        <p class="text-center">or:</p>
+  
+        <!-- Name input -->
+        <div data-mdb-input-init class="form-outline mb-4">
+          <input type="text" id="registerName" class="form-control" />
+          <label class="form-label" for="registerName">Name</label>
+        </div>
+  
+        <!-- Username input -->
+        <div data-mdb-input-init class="form-outline mb-4">
+          <input type="text" id="registerUsername" class="form-control" />
+          <label class="form-label" for="registerUsername">Username</label>
+        </div>
+  
+        <!-- Email input -->
+        <div data-mdb-input-init class="form-outline mb-4">
+          <input type="email" id="registerEmail" class="form-control" />
+          <label class="form-label" for="registerEmail">Email</label>
+        </div>
+  
+        <!-- Password input -->
+        <div data-mdb-input-init class="form-outline mb-4">
+          <input type="password" id="registerPassword" class="form-control" />
+          <label class="form-label" for="registerPassword">Password</label>
+        </div>
+  
+        <!-- Repeat Password input -->
+        <div data-mdb-input-init class="form-outline mb-4">
+          <input type="password" id="registerRepeatPassword" class="form-control" />
+          <label class="form-label" for="registerRepeatPassword">Repeat password</label>
+        </div>
+  
+        <!-- Checkbox -->
+        <div class="form-check d-flex justify-content-center mb-4">
+          <input class="form-check-input me-2" type="checkbox" value="" id="registerCheck" checked
+            aria-describedby="registerCheckHelpText" />
+          <label class="form-check-label" for="registerCheck">
+            I have read and agree to the terms
+          </label>
+        </div>
+  
+        <!-- Submit button -->
+        <button type="submit" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-block mb-3">Sign in</button>
+      </form>
+    </div>
+  </div>
+  <!-- Pills content -->
+    <!-- Navigation Section -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Your Name</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#header">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#education">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#work-experience">Work Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonials">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#recent-projects">Recent Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#podcast-features">Podcast Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#project-highlights">Project Highlights</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#tutorials-talks">Tutorials & Talks</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact-me">Contact Me</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Skills Section -->
+    <section id="skills" class="container my-4">         
+        <h2 class="h4">Skills</h2>
+        <div class="row">
+            <div class="col">
+                <div class="mb-3">
+                    <label for="html-css" class="form-label">HTML/CSS</label>
+                    <div class="progress">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">Expert</div>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="javascript" class="form-label">JavaScript</label>
+                    <div class="progress">
+                        <div class="progress-bar bg-warning" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">Intermediate</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="card" style="width: 20rem;">
+                    <img class="card-img-top img-thumbnail" style="height: 20rem;" src="circuit.jpg" alt="Card image cap">
+                    <div class="card-body">
+                    <h5 class="card-title">Circuitry</h5>
+                    <p class="card-text">I have 2 years of experience!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card" style="width: 20rem;">
+                    <img class="card-img-top img-thumbnail" style="height: 20rem;" src="frontend.jpg" alt="Card image cap">
+                    <div class="card-body">
+                    <h5 class="card-title">Front-end</h5>
+                    <p class="card-text">I have 2 years of experience!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card" style="width: 20rem;">
+                    <img class="card-img-top img-thumbnail" style="height: 20rem;" src="coding.jpg" alt="Card image cap">
+                    <div class="card-body">
+                    <h5 class="card-title">Back-end</h5>
+                    <p class="card-text">I have 2 years of experience!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <article id="education" class="container my-4 bg-info text-white p-3 rounded">
+        
+        <h2 class="h4">Education</h2>
+        <ul class="list-unstyled">
+
+            <li><a href="https://universitywebsite.com"><strong>University Name</strong></a>, Bachelor's Degree, Year</li>
+            <!-- Add more educational qualifications as needed -->
+        </ul>
+    </article>
+       
+    <!-- Work Experience Section -->
+    <article id="work-experience" class="container my-4">
+        <h2 class="h4">Work Experience</h2>
+        <p><strong>Job Title</strong>, Company Name <em>(Year-Year)</em></p>
+        <!-- Add more experience as needed -->
+
+
+<div class="container">
+    <div class="col-md-12 col-12 col-sm-12">
+        <div class="card">
+          <div class="card-header">
+            <h4>Task Details</h4>
+          </div>
+          <div class="card-body">
+            <div class="table-responsive">
+              <table class="table table-striped">
+                <tbody><tr>
+                  <th class="text-center">
+                    <div class="custom-checkbox custom-checkbox-table custom-control">
+                      <input type="checkbox" data-checkboxes="mygroup" data-checkbox-role="dad" class="custom-control-input" id="checkbox-all">
+                      <label for="checkbox-all" class="custom-control-label">&nbsp;</label>
+                    </div>
+                  </th>
+                  <th>Task Name</th>
+                  <th>Progress</th>
+                  <th>Due Date</th>
+                  <th>Action</th>
+                </tr>
+                <tr>
+                  <td class="p-0 text-center">
+                    <div class="custom-checkbox custom-control">
+                      <input type="checkbox" data-checkboxes="mygroup" class="custom-control-input" id="checkbox-1">
+                      <label for="checkbox-1" class="custom-control-label">&nbsp;</label>
+                    </div>
+                  </td>
+                  <td>Ecommerce website</td>
+                  <td class="align-middle">
+                    <div class="progress" data-height="4" data-toggle="tooltip" title="" data-original-title="100%" style="height: 4px;">
+                      <div class="progress-bar bg-success" data-width="100" style="width: 100px;"></div>
+                    </div>
+                  </td>
+                  <td>2018-01-20</td>
+                  <td>
+                    <a class="btn btn-primary btn-action mr-1" data-toggle="tooltip" title="" data-original-title="Edit"><i class="fas fa-pencil-alt"></i></a>
+                    <a class="btn btn-danger btn-action" data-toggle="tooltip" title="" data-confirm="Are You Sure?|This action can not be undone. Do you want to continue?" data-confirm-yes="alert('Deleted')" data-original-title="Delete"><i class="fas fa-trash"></i></a>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="p-0 text-center">
+                    <div class="custom-checkbox custom-control">
+                      <input type="checkbox" data-checkboxes="mygroup" class="custom-control-input" id="checkbox-4">
+                      <label for="checkbox-4" class="custom-control-label">&nbsp;</label>
+                    </div>
+                  </td>
+                  <td>Android App</td>
+                  <td class="align-middle">
+                    <div class="progress" data-height="4" data-toggle="tooltip" title="" data-original-title="30%" style="height: 4px;">
+                      <div class="progress-bar bg-orange" data-width="30" style="width: 30px;"></div>
+                    </div>
+                  </td>
+                  <td>2018-09-11</td>
+                  <td>
+                    <a class="btn btn-primary btn-action mr-1" data-toggle="tooltip" title="" data-original-title="Edit"><i class="fas fa-pencil-alt"></i></a>
+                    <a class="btn btn-danger btn-action" data-toggle="tooltip" title="" data-confirm="Are You Sure?|This action can not be undone. Do you want to continue?" data-confirm-yes="alert('Deleted')" data-original-title="Delete"><i class="fas fa-trash"></i></a>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="p-0 text-center">
+                    <div class="custom-checkbox custom-control">
+                      <input type="checkbox" data-checkboxes="mygroup" class="custom-control-input" id="checkbox-5">
+                      <label for="checkbox-5" class="custom-control-label">&nbsp;</label>
+                    </div>
+                  </td>
+                  <td>Logo Design</td>
+                  <td class="align-middle">
+                    <div class="progress" data-height="4" data-toggle="tooltip" title="" data-original-title="67%" style="height: 4px;">
+                      <div class="progress-bar bg-purple" data-width="67" style="width: 67px;"></div>
+                    </div>
+                  </td>
+                  <td>2018-04-12</td>
+                  <td>
+                    <a class="btn btn-primary btn-action mr-1" data-toggle="tooltip" title="" data-original-title="Edit"><i class="fas fa-pencil-alt"></i></a>
+                    <a class="btn btn-danger btn-action" data-toggle="tooltip" title="" data-confirm="Are You Sure?|This action can not be undone. Do you want to continue?" data-confirm-yes="alert('Deleted')" data-original-title="Delete"><i class="fas fa-trash"></i></a>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="p-0 text-center">
+                    <div class="custom-checkbox custom-control">
+                      <input type="checkbox" data-checkboxes="mygroup" class="custom-control-input" id="checkbox-6">
+                      <label for="checkbox-6" class="custom-control-label">&nbsp;</label>
+                    </div>
+                  </td>
+                  <td>Java Project</td>
+                  <td class="align-middle">
+                    <div class="progress" data-height="4" data-toggle="tooltip" title="" data-original-title="43%" style="height: 4px;">
+                      <div class="progress-bar bg-success" data-width="43" style="width: 43px;"></div>
+                    </div>
+                  </td>
+                  <td>2018-01-20</td>
+                  <td>
+                    <a class="btn btn-primary btn-action mr-1" data-toggle="tooltip" title="" data-original-title="Edit"><i class="fas fa-pencil-alt"></i></a>
+                    <a class="btn btn-danger btn-action" data-toggle="tooltip" title="" data-confirm="Are You Sure?|This action can not be undone. Do you want to continue?" data-confirm-yes="alert('Deleted')" data-original-title="Delete"><i class="fas fa-trash"></i></a>
+                  </td>
+                </tr>
+              </tbody></table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </article>
+
+    <!-- Testimonials Section -->
+    <aside id="testimonials" class="container my-4 p-4 bg-success text-white rounded">
+        <h2>Testimonials</h2>
+
+        <blockquote class="blockquote">
+            <p class="mb-0">"What ever the person said about you should go here"</p>
+        </blockquote>
+        <footer class="blockquote-footer text-white">- Fiona Smith, Project Manager at Company Name</footer>
+    </aside>
+
+    <!-- Recent Projects Section -->
+    <section id="recent-projects" class="container my-4 bg-light p-3 border rounded">
+        <!-- Coding Projects Section -->
+        <h2 class="h5">Recent Projects</h2>
+
+        <p>Project Name: Website Redesign</p>
+        <pre><code>&lt;!-- HTML structure of the redesigned homepage --&gt;
+&lt;div class="container"&gt;
+&lt;header&gt;...&lt;/header&gt;
+&lt;nav&gt;...&lt;/nav&gt;
+&lt;main&gt;...&lt;/main&gt;
+&lt;footer&gt;...&lt;/footer&gt;
+&lt;/div&gt;
+</code></pre>
+    </section>
+    
+    <!-- Podcast Features Section -->
+    <section id="podcast-features" class="container my-4">
+        <h2>Podcast Features</h2>
+        <audio controls>
+            <source src="podcast.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </section>
+    
+    <!-- Project Highlights Section -->
+    <section id="project-highlights" class="container my-4">
+        <h2>Project Highlights</h2>
+        <video width="100%" height="auto" type="video/mp4">
+            <source src="project_demo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+    
+    <!-- Tutorials & Talks Section -->
+    <section id="tutorials-talks" class="container my-4 bg-warning text-dark p-3 rounded">
+        <h2>Tutorials & Talks</h2>
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
+    
+    <!-- Contact Form Section -->
+     <aside id="contact-me" class="container my-4 bg-primary text-white p-3 rounded">
+        <h1 class="h4"> Contact Me</h1>
+        <form action="/submit" method="post" class="p-3 rounded needs-validation" novalidate>
+            <fieldset>
+                <legend class="h6">Contact Information</legend>
+                
+                <label for="full-name">Full Name</label>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="full-name" name="full-name" placeholder="Enter your full name" required>
+                    <div class="valid-feedback">Looks good!</div>
+                    <div class="invalid-feedback">Please enter your full name.</div>
+                </div>
+                
+                <label for="email">Email</label>
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+                    <div class="valid-feedback">Looks good!</div>
+                    <div class="invalid-feedback">Please enter a valid email.</div>
+                </div>
+                
+                <label for="phone">Phone Number</label>
+                <div class="form-floating mb-3">
+                    <input type="tel" class="form-control" id="phone" name="phone" placeholder="Enter your phone number" pattern="[0-9]{10}" required>
+                    <div class="valid-feedback">Looks good!</div>
+                    <div class="invalid-feedback">Please enter a valid 10-digit phone number.</div>
+                </div>
+            </fieldset>
+
+            <label for="message">Message</label>
+            <div class="form-floating mb-3">
+                <textarea class="form-control" id="message" name="message" rows="6" placeholder="Enter your message here" required></textarea>
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Please enter your message</div>
+            </div>
+
+            <button type="submit" class="btn btn-dark">Submit</button>
+        </form>
+     </aside>
+
+<script>
+// Example starter JavaScript for disabling form submissions if there are invalid fields
+(function() {
+    'use strict';
+    window.addEventListener('load', function() {
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function(form) {
+        form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+            event.preventDefault();
+            event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+        }, false);
+    });
+    }, false);
+})();
+</script>
+
+    <!-- Footer Section -->
+    <footer class="container-fluid py-3 mt-5 text-center bg-dark">
+        <p class="text-white">&copy; 2024 Ronak Patel. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
